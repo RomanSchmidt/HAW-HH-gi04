@@ -1,0 +1,115 @@
+body {
+    background-color: rgba(174, 221, 227, 0.4);
+    font-family: verdana, Geneva, sans-serif;
+    position: relative;
+}
+
+button {
+    background-color: #a6abe6;
+}
+
+#moveFrame {
+    height: 30px;
+    width: 500px;
+    background: linear-gradient(70deg, rgba(232, 95, 28, 0.29), rgba(20, 128, 23, 0.22));
+    border-width: 1px;
+    border-color: #717171;
+    border-style: solid;
+    position: relative;
+}
+
+#moveable {
+    width: 30px;
+    height: 100%;
+    position: absolute;
+}
+
+.move {
+    -webkit-animation: linear infinite alternate;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 5s;
+
+    background-image: radial-gradient(black 0%, white 10px, transparent 60%);
+    cursor: pointer;
+}
+
+.move:hover {
+    background-image: radial-gradient(black 0%, red 10px, transparent 60%);
+}
+
+@-webkit-keyframes run {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 470px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+table.container th, table.container td {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+table.container td:hover {
+    background-color: rgba(230, 173, 84, 0.49);
+}
+
+table.container .avatar {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.listContainer {
+    border: 1px ridge black;
+    padding: 10px;
+    height: 200px;
+    width: 80%;
+    overflow: auto;
+}
+
+.listContainer.comments {
+    width: 750px;
+}
+
+.listContainer.contacts {
+    width: 400px;
+}
+
+#errorContainer {
+    border: 1px ridge #ff2c2f;
+    background-color: #FFE4CF;
+    width: 70%;
+    min-height: 1pt;
+    max-height: 2em;
+    overflow: auto;
+    padding: 10px;
+    color: deeppink;
+    position: absolute;
+    opacity: 0.9;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+h2 {
+    margin-block-end: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.delete {
+    background-color: #ffbfa9;
+}
+
+.hidden {
+    display: none;
+}
