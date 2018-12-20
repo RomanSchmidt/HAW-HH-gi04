@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../static/styles.css">
-    <script src="../static/scripts.js"></script>
+    <link rel="stylesheet" href="./static/styles.css">
+    <script src="./static/scripts.js"></script>
     <title>Title</title>
 </head>
 <body>
