@@ -14,11 +14,11 @@
     use Contact\Container\Contacts;
     use Contact\Controller;
 
-    require_once('class/Controller.php');
-    require_once('class/Container/Contacts.php');
-    require_once('class/Container/Comments.php');
-    require_once('class/Container/Elements/Contact.php');
-    require_once('class/Container/Elements/Comment.php');
+    require_once('class' . DIRECTORY_SEPARATOR . 'Controller.php');
+    require_once('class' . DIRECTORY_SEPARATOR . 'Container' . DIRECTORY_SEPARATOR . 'Contacts.php');
+    require_once('class' . DIRECTORY_SEPARATOR . 'Container' . DIRECTORY_SEPARATOR . 'Comments.php');
+    require_once('class' . DIRECTORY_SEPARATOR . 'Container' . DIRECTORY_SEPARATOR . 'Elements' . DIRECTORY_SEPARATOR . 'Contact.php');
+    require_once('class' . DIRECTORY_SEPARATOR . 'Container' . DIRECTORY_SEPARATOR . 'Elements' . DIRECTORY_SEPARATOR . 'Comment.php');
 
     $contacts = new Contacts();
     $comments = new Comments();
@@ -26,4 +26,4 @@
 
     $controller = new Controller($contacts, $comments);
 
-    require_once('view/hello.php');
+    require_once('view'.DIRECTORY_SEPARATOR .'hello.php');

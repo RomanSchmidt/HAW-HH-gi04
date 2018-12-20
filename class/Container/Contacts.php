@@ -9,7 +9,7 @@
     namespace Contact\Container;
 
     require_once('AContainer.php');
-    require_once('Elements\Contact.php');
+    require_once('Elements'.DIRECTORY_SEPARATOR .'Contact.php');
 
     use Contact\Container\Element\Contact;
     use Contact\Container\Element\IElement;

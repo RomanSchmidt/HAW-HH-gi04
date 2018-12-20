@@ -8,7 +8,7 @@
 
     namespace Contact\Container;
 
-    require_once('Elements\Comment.php');
+    require_once('Elements'.DIRECTORY_SEPARATOR .'Comment.php');
 
     use Contact\Container\Element\Comment;
     use Contact\Container\Element\Contact;
