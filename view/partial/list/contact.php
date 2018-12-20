@@ -24,7 +24,12 @@
                             '<td>', ($key + 1), '</td>',
                             '<td>', $contact->getFirstName(), ' ', $contact->getSecondName(), '</td>',
                             '<td><img class="avatar" alt="avatar" src="', $contact->getAvatar(), '" /></td>',
-                            '<td><input type="submit" value="Delete" class="delete"></td>',
+                            '<td>',
+                            '<form name="deleteContact" method="post" action="index.php">',
+                            '<input type="submit" value="Delete" class="delete">',
+                            '<input type="hidden" name="deleteContact" value="', $key, '">',
+                            '</form>',
+                            '</td>',
                             '</tr>'
                         ]);
                     }
