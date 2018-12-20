@@ -1,4 +1,4 @@
-<form id="inputContact" method="post" action="index.php">
+<form id="inputContact" method="post">
     <table class="container">
         <tr>
             <td><input type="text" name="firstName" placeholder="First Name" pattern="[A-Za-z]{3, 30}"

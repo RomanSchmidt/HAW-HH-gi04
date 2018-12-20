@@ -25,7 +25,7 @@
                             '<td>', $contact->getFirstName(), ' ', $contact->getSecondName(), '</td>',
                             '<td><img class="avatar" alt="avatar" src="', $contact->getAvatar(), '" /></td>',
                             '<td>',
-                            '<form name="deleteContact" method="post" action="index.php">',
+                            '<form name="deleteContact" method="post">',
                             '<input type="submit" value="Delete" class="delete">',
                             '<input type="hidden" name="deleteContact" value="', $key, '">',
                             '</form>',

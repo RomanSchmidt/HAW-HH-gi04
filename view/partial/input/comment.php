@@ -1,5 +1,5 @@
 <td>
-    <form id="inputComment" method="post" action="index.php">
+    <form id="inputComment" method="post">
         <table class="container">
             <tr>
                 <td><textarea name="comment" placeholder="Add Comment" rows="1" cols="40" required></textarea></td>
