@@ -1,4 +1,4 @@
-<form id="inputContact" method="post" action="/">
+<form id="inputContact" method="post" action="./">
     <table class="container">
         <tr>
             <td><input type="text" name="firstName" placeholder="First Name" pattern="[A-Za-z]{3, 30}" title="a-Z mit 3 - 30 Zeichen" size="10" required/></td>

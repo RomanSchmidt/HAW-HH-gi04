@@ -1,5 +1,5 @@
 <td>
-    <form id="inputComment" method="post" action="/">
+    <form id="inputComment" method="post" action="./">
         <table class="container">
             <tr>
                 <td><textarea name="comment" placeholder="Add Comment" rows="1" cols="40" required></textarea></td>

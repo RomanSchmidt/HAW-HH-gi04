@@ -30,7 +30,7 @@
                             '<td><img class="avatar" alt="avatar" src="', $author->getAvatar(), '"/></td>',
                             '<td><input type="datetime-local" disabled step="1" value="', $comment->getCreationDate()->format(Comment::TIME_FORMAT), '"/></td>',
                             '<td>',
-                            '<form name="deleteComment" method="post" action="/">',
+                            '<form name="deleteComment" method="post" action="./">',
                             '<input type="submit" value="Delete" name="delete" class="delete">',
                             '<input type="hidden" name="deleteComment" value="', $key, '">',
                             '</form>',
