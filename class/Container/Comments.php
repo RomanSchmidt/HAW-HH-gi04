@@ -28,7 +28,7 @@
         {
             $string = file_get_contents(Comments::JSON_FILE);
             $comments = json_decode($string, true);
-            $comments = $comments && array_reverse($comments) || [];
+            $comments = $comments ? array_reverse($comments) : [];
             foreach ($comments as $comment) {
                 $contact = new Contact($comment['authorFirstName'], $comment['authorSecondName'], $comment['authorAvatar']);
                 $contactObject = new Comment($comment['comment'], \DateTime::createFromFormat(Comment::TIME_FORMAT, $comment['date']), $contact);

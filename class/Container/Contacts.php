@@ -28,7 +28,7 @@
         {
             $string = file_get_contents(Contacts::JSON_FILE);
             $contacts = json_decode($string, true);
-            $contacts = $contacts && array_reverse($contacts) || $contacts;
+            $contacts = $contacts ? array_reverse($contacts) : $contacts;
             foreach ($contacts as $contact) {
                 $contactObject = new Contact($contact['firstName'], $contact['secondName'], $contact['avatar']);
                 $this->add($contactObject);
