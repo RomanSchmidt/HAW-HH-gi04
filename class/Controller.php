@@ -8,10 +8,10 @@
 
     namespace Contact;
 
-    require_once 'Container'.DIRECTORY_SEPARATOR .'Elements'.DIRECTORY_SEPARATOR .'Contact.php';
-    require_once 'Container'.DIRECTORY_SEPARATOR .'Elements'.DIRECTORY_SEPARATOR .'Comment.php';
-    require_once 'Container'.DIRECTORY_SEPARATOR .'Contacts.php';
-    require_once 'Container'.DIRECTORY_SEPARATOR .'Comments.php';
+    require_once 'Container' . DIRECTORY_SEPARATOR . 'Elements' . DIRECTORY_SEPARATOR . 'Contact.php';
+    require_once 'Container' . DIRECTORY_SEPARATOR . 'Elements' . DIRECTORY_SEPARATOR . 'Comment.php';
+    require_once 'Container' . DIRECTORY_SEPARATOR . 'Contacts.php';
+    require_once 'Container' . DIRECTORY_SEPARATOR . 'Comments.php';
 
     use Contact\Container\Comments;
     use Contact\Container\Contacts;
@@ -50,7 +50,7 @@
                         $this->deleteContact((int)$_POST['deleteContact']);
                         break;
                 }
-                header('Location: /');
+                header('Location: ' . $_SERVER['REQUEST_URI']);
             }
         }
 
