@@ -23,7 +23,7 @@
                             '<tr>',
                             '<td>', ($key + 1), '</td>',
                             '<td>', $contact->getFirstName(), ' ', $contact->getSecondName(), '</td>',
-                            '<td><img class="avatar" alt="avatar" src="', $contact->getAvatar(), '" /></td>',
+                            '<td><img class="avatar" alt="avatar" src="', addslashes($contact->getAvatar()), '" /></td>',
                             '<td>',
                             '<form name="deleteContact" method="post">',
                             '<input type="submit" value="Delete" class="delete">',

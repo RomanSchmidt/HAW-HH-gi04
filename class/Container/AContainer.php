@@ -18,7 +18,17 @@
 
         public function __construct()
         {
+            $this->_ensureFiles();
             $this->_init();
+        }
+
+        private function _ensureFiles() {
+            $myFile = $this->getJSONFile();
+            if(!file_exists($myFile)){
+                $fh = fopen($myFile, 'w');
+                fwrite($fh, '');
+                fclose($fh);
+            }
         }
 
         private $_container = [];
