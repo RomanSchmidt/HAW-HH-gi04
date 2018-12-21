@@ -22,7 +22,7 @@
                         echo join('', [
                             '<tr>',
                             '<td>', ($key + 1), '</td>',
-                            '<td>', $contact->getFirstName(), ' ', $contact->getSecondName(), '</td>',
+                            '<td>', addslashes($contact->getFirstName()), ' ', addslashes($contact->getSecondName()), '</td>',
                             '<td><img class="avatar" alt="avatar" src="', addslashes($contact->getAvatar()), '" /></td>',
                             '<td>',
                             '<form name="deleteContact" method="post">',
