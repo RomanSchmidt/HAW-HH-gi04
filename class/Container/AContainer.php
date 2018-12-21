@@ -15,6 +15,7 @@
         protected abstract function getJSONFile(): string;
 
         private const LIMIT_COMMENT_LIST = 25;
+        protected const DB_FOLDER = 'db';
 
         public function __construct()
         {
@@ -23,7 +24,11 @@
         }
 
         private function _ensureFiles() {
+            $myDir = AContainer::DB_FOLDER;
             $myFile = $this->getJSONFile();
+            if(!is_dir($myDir)){
+                mkdir($myDir);
+            }
             if(!file_exists($myFile)){
                 $fh = fopen($myFile, 'w');
                 fwrite($fh, '');
