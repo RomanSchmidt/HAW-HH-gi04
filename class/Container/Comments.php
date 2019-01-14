@@ -8,7 +8,7 @@
 
     namespace Contact\Container;
 
-    require_once('Elements'.DIRECTORY_SEPARATOR .'Comment.php');
+    require_once('Elements' . DIRECTORY_SEPARATOR . 'Comment.php');
 
     use Contact\Container\Element\Comment;
     use Contact\Container\Element\Contact;
@@ -17,7 +17,7 @@
 
     class Comments extends AContainer
     {
-        private const JSON_FILE = './db/comments.json';
+        private const JSON_FILE = './' . AContainer::DB_FOLDER . '/comments.json';
 
         protected function getJSONFile(): string
         {

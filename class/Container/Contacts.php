@@ -9,7 +9,7 @@
     namespace Contact\Container;
 
     require_once('AContainer.php');
-    require_once('Elements'.DIRECTORY_SEPARATOR .'Contact.php');
+    require_once('Elements' . DIRECTORY_SEPARATOR . 'Contact.php');
 
     use Contact\Container\Element\Contact;
     use Contact\Container\Element\IElement;
@@ -17,7 +17,7 @@
 
     class Contacts extends AContainer
     {
-        private const JSON_FILE = './db/contacts.json';
+        private const JSON_FILE = './' . AContainer::DB_FOLDER . '/contacts.json';
 
         protected function getJSONFile(): string
         {
